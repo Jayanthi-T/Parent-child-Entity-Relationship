@@ -22,5 +22,11 @@ public class CustomerOrderController {
     public Customer addCustomer(@RequestBody Customer customer){
         return repo.save(customer);
     }
+    
+    @DeleteMapping("/deleteCustomer/{id}")
+    public String deleteCustomer(@PathVariable Long id){
+        customerRepo.deleteById(id);
+        return "Customer Deleted.";
+    }
 
 }
