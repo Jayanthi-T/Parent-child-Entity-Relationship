@@ -16,10 +16,6 @@ public class Order {
     @Column(name = "orderQuantity")
     private Integer orderQuantity;
 
-//    @ManyToOne(mappedBy = "orders")
-//    private Customer customer;
-
-
     public Order() {
 
     }
